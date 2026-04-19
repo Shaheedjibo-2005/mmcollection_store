@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>MM Luxury Women Saloon</title>
+    <link rel="stylesheet" href="saloon.css" >
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+/* NORMAL LINK */
+.nav-links a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ICON NORMAL */
+.nav-links a i {
+  color: goldenrod;
+  font-size: 25px;
+  padding-left: 15px;
+  transition: 0.3s;
+}
+
+/* HOVER BACKGROUND */
+.nav-links a:hover {
+  background: goldenrod;
+  color:white;
+  border-radius: none;
+}
+
+/* ICON ON HOVER */
+.nav-links a:hover i {
+  color: black;
+}
+
+/* ===== NAVBAR (MOBILE) ===== */
+.navbar {
+  background-color:rgba(0,0,0,0.5);
+  padding: 9px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: -5px;
+}
+
+.brand img {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+}
+
+
+span{
+  color: goldenrod;
+}
+.brand
+:span {
+  color: goldenrod;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Links hidden by default */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.nav-links a {
+  color: white;
+  padding: 12px 0px 20px;
+  text-decoration: none;
+  border-top: 1px solid #333;
+}
+/* hover section */
+.nav-links a:hover{
+    background-color: goldenrod;
+}
+.menu-icon:hover{
+    background-color: goldenrod;
+    /* height: 40px; */
+}
+
+/* Menu icon */
+.menu-icon {
+  position: absolute;
+  right: 2px;
+  top: 0;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding: 15px 15px 15px 15px;
+  padding-bottom: 13px;
+  
+}
+
+/* When menu opens */
+.navbar.active .nav-links {
+  display: flex;
+}
+/* HERO */
+.hero{
+    position:relative;
+    height:100vh;
+    background:url("Photos/saloon.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:#d4af37;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7); /* dark overlay */
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#d4af37;
+    color:black;
+    padding:12px 30px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+/* SERVICES */
+.services{
+    background:#111;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.services h2{
+    color:#d4af37;
+    margin-bottom:40px;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    border:1px solid #d4af37;
+    padding:30px;
+    transition:0.3s;
+}
+
+.card:hover{
+    background:#d4af37;
+    color:black;
+}
+
+/* BRIDAL */
+.bridal{
+    background:#f8f5f0;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.bridal h2{
+    margin-bottom:40px;
+}
+
+.bridal-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.bridal-card{
+    background:white;
+    padding:30px;
+    border:2px solid #d4af37;
+    transition:0.3s;
+}
+
+.bridal-card span{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+    color:#d4af37;
+}
+
+.bridal-card:hover{
+    transform:translateY(-10px);
+}
+
+/* BOOKING */
+.booking{
+    background:#0f0f0f;
+    color:#d4af37;
+    text-align:center;
+    padding:60px 20px;
+}
+
+/* MOBILE */
+/* @media(max-width:768px){
+    .hero h1{
+        font-size:28px;
+    }
+} */
+ /* GALLERY */
+.gallery{
+    background:#333;
+    padding:60px 20px;
+    text-align:center;
+}
+
+.gallery h2{
+    color:#d4af37;
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+}
+
+.gallery-item img{
+    width:100%;
+    height: 500px;
+    object-fit: cover;
+    display:block;
+    transition:0.5s ease;
+}
+
+/* Hover Zoom */
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+.gallery-desc{
+    color:#ccc;
+    margin-bottom:30px;
+}
+/* BOOKING FORM */
+.booking-form{
+    background:#0f0f0f;
+    padding:70px 20px;
+    text-align:center;
+    color:#d4af37;
+}
+
+.booking-form h2{
+    margin-bottom:40px;
+    font-size:30px;
+}
+
+.booking-form form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+    padding:15px;
+    border:1px solid #d4af37;
+    background:#111;
+    color:white;
+    outline:none;
+    border-radius:5px;
+}
+
+.booking-form textarea{
+    min-height:120px;
+    resize:none;
+}
+
+.booking-form button{
+    padding:15px;
+    background:#d4af37;
+    color:black;
+    border:none;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.booking-form button:hover{
+    background:white;
+}
+/* LOADING OVERLAY */
+.loading-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    visibility:hidden;
+    opacity:0;
+    transition:0.3s;
+    z-index:9999;
+}
+
+.loading-overlay.active{
+    visibility:visible;
+    opacity:1;
+}
+
+.loader-box{
+    position:relative;
+    text-align:center;
+}
+
+/* LOGO HEARTBEAT */
+.logo-loader{
+    width:100px;
+    border-radius: 50%;
+    margin-top: 70px;
+    animation:heartbeat 1.2s infinite;
+    position:relative;
+    z-index:2;
+}
+
+@keyframes heartbeat{
+    0%{transform:scale(1);}
+    25%{transform:scale(1.1);}
+    40%{transform:scale(1);}
+    60%{transform:scale(1.15);}
+    100%{transform:scale(1);}
+}
+
+/* SPINNER CIRCLE */
+.spinner{
+    position:absolute;
+    width:140px;
+    height:140px;
+    border:4px solid rgba(212,175,55,0.2);
+    border-top:4px solid #d4af37;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+@keyframes spin{
+    0%{transform:translate(-50%,-50%) rotate(0deg);}
+    100%{transform:translate(-50%,-50%) rotate(360deg);}
+}
+.loading-text{
+    margin-top:40px;
+    color:#d4af37;
+    font-size:18px;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+
+  <div class="brand">
+    <img src="Photos/momy.jpg"  alt="logo">
+    <span>M.M COLLECTION</span>
+  </div>
+
+  <div class="nav-links">
+    <a href="Index.html"><i class="fa fa-home"></i>Home</a>
+    <a href="About us.html"><i class="fa fa-user"></i> About us</a> 
+    <a href="Contact us.html"><i class="fa fa-phone"></i> Contact us</a>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
+    <!-- HERO SECTION -->
+     <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>MM Luxury Women Saloon</h1>
+        <p>Everyday Beauty & Bridal Perfection</p>
+        <a href="#services" class="btn">View Services</a>
+    </div>
+</section>
+
+    <!-- EVERYDAY BEAUTY -->
+    <section class="services" id="services">
+      <h2>Everyday Beauty Services</h2>
+      <div class="service-grid">
+        <div class="card">Hair Styling</div>
+        <div class="card">Braiding</div>
+        <div class="card">Hair Coloring</div>
+        <div class="card">Makeup</div>
+        <div class="card">Facial Treatment</div>
+        <div class="card">Nails</div>
+        <div class="card">Henner</div>
+      </div>
+    </section>
+
+    <!-- BRIDAL SECTION -->
+    <section class="bridal">
+      <h2>Bridal & Event Packages</h2>
+      <div class="bridal-grid">
+        <div class="bridal-card">
+          <h3>Silver Package</h3>
+          <p>Bridal Hair + Makeup</p>
+          <span>₦30,000</span>
+        </div>
+
+        <div class="bridal-card">
+          <h3>Gold Package</h3>
+          <p>Hair + Makeup + Gele Styling</p>
+          <span>₦50,000</span>
+        </div>
+
+        <div class="bridal-card">
+          <h3>Royal Premium</h3>
+          <p>Full Glam + Home Service</p>
+          <span>₦80,000</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking">
+      <h2>Book Your Appointment</h2>
+      <a href="http://wa.me/7038094555" class="btn">Chat on WhatsApp</a>
+    </section>
+    <!-- GALLERY -->
+<section class="gallery">
+
+    <h2>Everyday Beauty Styles</h2>
+    <p class="gallery-desc">
+Premium bridal glam for your unforgettable day.
+</p>
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="Photos/Everyday img 1.jpg" alt="Saloon Interior">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Everyday img 2.jpg" alt="Saloon Interior">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Everyday img 3.jpg" alt="Saloon Interior">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Everyday 4.jpg" alt="Saloon Interior">
+        </div>
+
+    </div>
+
+    <h2 class="bridal-title">Bridal & Event Styles</h2>
+    <p class="gallery-desc">
+Premium bridal glam for your unforgettable day.
+</p>
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="Photos/Bridal img 1.jpg" alt="Bridal Style">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Bridal img 3.jpg" alt="Bridal Style">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Bridal img 2.jpg" alt="Bridal Style">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Bridal img 4.jpg" alt="Bridal Style">
+        </div>
+
+    </div>
+
+</section>
+<!-- BOOKING FORM SECTION -->
+<section class="booking-form" id="bookingForm">
+    <h2>Book Your Appointment</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+<select id="serviceSelect" required>
+    <option value="">Select Service</option>
+    <option value="Hair Styling">Hair Styling</option>
+    <option value="Braiding">Braiding</option>
+    <option value="Makeup">Makeup</option>
+    <option value="Bridal Silver Package">Bridal Silver Package</option>
+    <option value="Bridal Gold Package">Bridal Gold Package</option>
+    <option value="Royal Premium Package">Royal Premium Package</option>
+</select>
+
+        <input type="date" required>
+        <textarea placeholder="Additional Message (Optional)"></textarea>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</section>
+<!-- LOADING OVERLAY -->
+<div class="loading-overlay" id="loadingOverlay">
+    <div class="loader-box">
+        <div class="spinner"></div>
+        <img src="Photos/momy.jpg" class="logo-loader">
+        <p class="loading-text">Processing Booking...</p>
+    </div>
+</div>
+
+    <script>
+        /* MENU */
+function toggleMenu() {
+  document.getElementById("navbar").classList.toggle("active");
+}
+///bookingform section///--->
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let overlay = document.getElementById("loadingOverlay");
+    overlay.classList.add("active");
+
+    // Get form inputs
+let name = document.querySelector("input[type='text']").value;
+let phone = document.querySelector("input[type='tel']").value;
+let serviceSelect = document.getElementById("serviceSelect");
+let service = serviceSelect.value;
+let date = document.querySelector("input[type='date']").value;
+let message = document.querySelector("textarea").value;
+
+    // Console Debugging service
+    console.log("Service: ", service);  
+    console.log("Message: ", message);
+
+    let whatsappNumber = "2347038094555"; // whatsapp number in international format without + or 00
+
+    // Construct URL with URL encoding
+    let url = "https://wa.me/" + whatsappNumber + 
+    "?text=Hello MM Luxury Women Saloon,%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+    "Service: " + encodeURIComponent(service) + "%0A" +
+    "Date: " + encodeURIComponent(date) + "%0A" +
+    "Message: " + encodeURIComponent(message);
+
+    // Log generated URL for debugging
+    console.log("Generated WhatsApp URL: " + url);
+
+    // Delay 3 seconds then success
+    setTimeout(function(){
+        document.querySelector(".loading-text").innerHTML = "Booking Successful ✔";
+        setTimeout(function(){
+            overlay.classList.remove("active");
+            window.open(url, "_blank");
+        },1500);
+    },3000);
+});
+    </script>
+  </body>
+</html>

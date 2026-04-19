@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+        /* NORMAL LINK */
+.nav-links a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ICON NORMAL */
+.nav-links a i {
+  color: goldenrod;
+  font-size: 25px;
+  padding-left: 15px;
+  transition: 0.3s;
+}
+
+/* HOVER BACKGROUND */
+.nav-links a:hover {
+  background: goldenrod;
+  color:white;
+  border-radius: none;
+}
+
+/* ICON ON HOVER */
+.nav-links a:hover i {
+  color: black;
+}
+
+/* ===== NAVBAR (MOBILE) ===== */
+.navbar {
+  background: #222;
+  padding: 9px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: -5px;
+}
+
+.brand img {
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+}
+
+
+span{
+  color: goldenrod;
+}
+.brand
+:span {
+  color: goldenrod;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Links hidden by default */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.nav-links a {
+  color: white;
+  padding: 12px 0px 20px;
+  text-decoration: none;
+  border-top: 1px solid #333;
+}
+/* hover section */
+.nav-links a:hover{
+    background-color: goldenrod;
+}
+.menu-icon:hover{
+    background-color: goldenrod;
+    /* height: 40px; */
+}
+
+/* Menu icon */
+.menu-icon {
+  position: absolute;
+  right: 2px;
+  top: 0;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  padding: 15px 15px 15px 15px;
+  padding-bottom: 13px;
+  
+}
+
+/* When menu opens */
+.navbar.active .nav-links {
+  display: flex;
+}
+
+          .about-us{
+    padding: 60px 10%;
+    text-align: center;
+    background-color: #555;
+}
+
+.about-us h2{
+    font-size: 38px;
+    color: goldenrod;
+    margin-bottom: 40px;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.about-card{
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,20,0.9);
+}
+
+.about-card h3{
+    color: goldenrod;
+    margin-bottom: 15px;
+}
+
+.about-card p{
+    color: #111;
+    line-height: 1.8;
+}
+
+.about-video{
+    margin-top: 50px;
+}
+
+.about-video video{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 10%;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.about-image{
+    flex: 1;
+    min-width: 300px;
+    margin-top: 20px;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.about-text{
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2{
+    font-size: 35px;
+    color: goldenrod;
+    margin-bottom: 15px;
+}
+
+.about-text p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-text button{
+    padding: 10px 25px;
+    border: none;
+    background: goldenrod;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-text button:hover{
+    background:white;
+    color: #111;
+}
+@media (min-width:768px) {
+  /* NORMAL LINK */
+   /* Navbar */
+  .navbar {
+    width:100%;
+    height: 60px;
+    /* padding:1rem ; */
+    background: #222;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 1px solid white; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  body{
+    background-color: black;
+  }
+.nav-links a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ICON NORMAL */
+.nav-links a i {
+  color: goldenrod;
+  transition: 0.3s;
+}
+
+/* HOVER BACKGROUND */
+.nav-links a:hover {
+  background: goldenrod;
+  color: white;
+  border-radius: 6px;
+}
+
+/* ICON ON HOVER */
+.nav-links a:hover i {
+  color: black;
+}
+
+ 
+  .brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.brand img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+}
+
+.brand span {
+  color:goldenrod;
+  font-size: 25px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-image: url(Photos/momy.jpg);
+  background: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color:transparent;
+  font-weight: bold;
+  animation:  heartbeat 2s infinite;
+}
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin-top: 0;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links a {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+            .about-us{
+    padding: 60px 10%;
+    text-align: center;
+
+}
+
+.about-us h2{
+    font-size: 38px;
+    color: goldenrod;
+    margin-bottom: 40px;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
+
+.about-card{
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,20,0.9);
+}
+
+.about-card h3{
+    color: goldenrod;
+    margin-bottom: 15px;
+}
+
+.about-card p{
+    color:#111;
+    line-height: 1.8;
+}
+
+.about-video{
+    margin-top: 50px;
+}
+
+.about-video video{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    /* object-fit: cover; */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 10%;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.about-image{
+    flex: 1;
+    min-width: 300px;
+    margin-top: 20px;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: 12px;
+}
+
+.about-text{
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2{
+    font-size: 35px;
+    color: goldenrod;
+    margin-bottom: 15px;
+}
+
+.about-text p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-text button{
+    padding: 10px 25px;
+    border: none;
+    background: goldenrod;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.about-text button:hover{
+    background:white;
+    color: black;
+}   
+    
+}
+    </style>
+</head>
+<body>
+       <!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+
+  <div class="brand">
+    <img src="Photos/momy.jpg"  alt="logo">
+    <span>M.M COLLECTION</span>
+  </div>
+
+  <div class="nav-links">
+    <a href="Index.html"><i class="fa fa-home"></i>Home</a>
+    <a href="About us.html"><i class="fa fa-user"></i> About us</a> 
+    <a href="Contact us.html"><i class="fa fa-phone"></i> Contact us</a>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
+    <section class="about">
+    <div class="about-image">
+        <img src="Photos/momy.jpg" alt="MM Collection and Saloon">
+    </div>
+
+    <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+            MM Collection and Saloon is dedicated to beauty, fashion, and quality service. 
+            We provide stylish collections and professional salon care to help you look and feel your best.
+        </p>
+       <a href="#about us"> <button> Read More <i class="fa fa-arrow-down"></i> </button></a>
+    </div>
+</section>
+    <section id="about us" class="about-us">
+
+    <h2>About Us</h2>
+
+    <div class="about-container">
+
+        <div class="about-card">
+            <h3>Brief History</h3>
+            <p>
+                MM Collection and Saloon was established with a passion for beauty, fashion, and quality service.
+                Over time, we have built trust by offering stylish collections and professional salon care.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>Our Mission</h3>
+            <p>
+                To provide high-quality beauty and fashion services that satisfy our customers and improve confidence.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>Our Vision</h3>
+            <p>
+                To become a leading name in beauty and salon services through excellence and innovation.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>Our Goal</h3>
+            <p>
+                Our goal is to provide excellent beauty and fashion services, maintain high quality,
+                and build lasting trust with every customer.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="about-video">
+        <h2>Watch Our Story</h2>
+        <video controls>
+            <source  src="videos/mmcollection video story.mp4" type="video/mp4" >
+        </video>
+    </div>
+
+</section>
+<script>
+            /* MENU */
+function toggleMenu() {
+  document.getElementById("navbar").classList.toggle("active");
+}
+</script>
+</body>
+</html>

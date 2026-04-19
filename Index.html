@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> M.M COLLECTION</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+  
+
+
+
+<section class="mobile-hero">
+<nav class="navbar" id="navbar">
+
+  <div class="brand">
+    <img src="Photos/momy.jpg"  alt="logo">
+    <span>M.M COLLECTION</span> 
+  </div>
+  <div class="nav-links">
+    <a href="#"><i class="fa fa-home"></i>Home</a>
+    <a href="About us.html"><i class="fa fa-user"></i> About us</a> 
+    <a href="Contact us.html"><i class="fa fa-phone"></i> Contact us</a>
+  </div>
+
+  <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</nav>
+<!-- duk video slider-->
+ <!-- ===== HERO SECTION ===== -->
+ <section class="hero">
+<video class="slide active" muted autoplay loop playsinline>
+  <source src="videos/VID-20251206-WA0035.mp4">
+</video>
+
+<video class="slide" muted loop playsinline>
+  <source src="videos/VID-20251206-WA0034.mp4">
+</video>
+
+<video class="slide" muted loop playsinline>
+  <source src="videos/VID-20251206-WA0030.mp4">
+</video>
+
+      <div class="overlay"></div>
+
+  <!-- CONTENT -->
+  <div class="hero-content">
+    <h1 id="first">WELCOME TO</h1>
+    <h1>M.M COLLECTION & BEAUTY LOUNGE</h1>
+    <p>Style • Beauty • Confidence</p>
+
+    <a href="Collections.html" class="btn">Collections</a>
+    <a href="Saloon.html" class="btn outline">Beauty Lounge</a>
+  </div>
+
+</section>
+
+</section>
+<canvas id="snow"></canvas>
+  <div class="cart-icon" onclick="goToCheckout()">
+  <!-- <i class="fa fa-shopping-cart"></i> -->🛒
+   <!-- <p id="stikker">mmkoooo</p> -->
+  <span class="cart-count">0</span>
+</div>
+<section class="desktop-hero">
+  
+<nav class="navbar" id="navbar">
+
+  <div class="brand">
+    <img src="Photos/momy.jpg"  alt="logo">
+    <span>M.M COLLECTION</span>
+  </div>
+  <input type="text" id="searchInput" placeholder="Search products...">
+
+  <div class="nav-links">
+    <a href="#"><i class="fa fa-home"></i>Home</a>
+    <a href="About us.html"><i class="fa fa-user"></i> About us</a> 
+    <a href="#contact-about"><i class="fa fa-phone"></i> Contact us</a>
+  </div>
+</nav>
+  <div class="wrapper">
+  <div class="hero-left">
+    <h1>WELCOME TO</h1>
+    <h1>M.M COLLECTIONS & BEAUTY LOUNGE</h1>
+    <p>Professional fashion & beauty services</p>
+    <a href="#our services" class="btn"> <i class="fa fa-cogs"></i>Our Services</a>
+  </div>
+
+   <div class="hero-right">
+
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Photos/collection-2.jpg" style="width:100%">
+  <div class="text">woooow</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Photos/welcome img.jpeg" style="width:100%">
+  <div class="text">perfect</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Photos/welcome 2 img.jpeg" style="width:100%">
+  <div class="text">gorgeous</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+   </div>
+  </div>
+<section class="hero-image" id="our services">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <div class="smole-content">
+      <p style="padding-bottom: 10px; font-weight: 200; font-size: 20px; font-style: italic;">   M.M Collection BEAUTY LOUNGE is your one-stop destination for quality fashion wears 
+    and professional beauty services. We offer modern styles, classic designs, 
+    and premium salon treatments.</p>
+    </div>
+    <section class="services">
+  <h2>Our Services</h2>
+
+  <a href="#Collections" class="service-box">
+    <i class="fa fa-shopping-bag"></i>
+    <h3>Fashion Collection</h3>
+    <p>Trendy clothes, native wears, and modern outfits.</p>
+  </a>
+
+  <a href="#saloon" class="service-box">
+    <i class="fa fa-scissors"></i>
+    <h3>Salon Services</h3>
+    <p>Hair styling, makeup, facial treatment and more.</p>
+  </a>
+
+</section>
+
+  </div>
+</section>
+ <div class="grid-wrapper">
+   <div class="grid">
+    <div id="Collections" class="service-card">
+    <img src="Photos/perfume.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Spray perfume</h3>
+    <h4>Each one</h4>
+    <p class="price">₦5,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+<button class="add-cart" data-code="PF-LX-1001" onclick="addToCart('Spray perfume',5000,'PF-LX-1001',event)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Perfume 2.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Oil perfume</h3>
+    <h4>Each one</h4>
+    <p class="price">₦5,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+<button class="add-cart" data-code="PF-LX-1002" onclick="addToCart('Oil perfume',5000,'PF-LX-1002',event)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/buning incense 1.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Boning incense, Sandal</h3>
+    <h4>Each one</h4>
+    <p class="price">₦3,500</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+<button  class="add-cart" data-code="PF-BN-2001" onclick="addToCart('Boning incense, Sandal',3500,'PF-BN-2001',event)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid"> 
+      <div class="service-card">
+    <img src="Photos/boning incense2.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Boning incense, Hawee</h3>
+    <h4>Each one</h4>
+    <p class="price">₦3,500</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+<button class="add-cart" data-code="PF-BN-2002" onclick="addToCart('Boning incense, Hawee ',3500,'PF-BN-2002',event)">Add to Cart</button>
+  </div>  
+  </div>
+   <div class="grid">
+      <div class="service-card">
+    <img src="Photos/Boning Incense, Khalut.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Borning Incense, Khalut</h3>
+    <h4>Each one</h4>
+    <p class="price">₦3,500</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="PF-BN-2003" onclick="addToCart(
+  'Borning Incense, Khalut',
+  3500,'PF-BN-2003',event
+)">Add to Cart</button>
+  </div>  
+  </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Classic unisex watch.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Unisex Watch, Lockworld</h3>
+    <h4>All</h4>
+    <p class="price">₦30,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="WT-LW-3001" onclick="addToCart(
+  'Unisex watch, Lockwolrd',
+  30000,'WT-LW-3001',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/elegant womens watch.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Human Watch, Lockworld</h3>
+    <h4>Each one</h4>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="WT-LW-3002" onclick="addToCart(
+  'Human watch, Lockworld',
+  15000,'WT-LW-3002',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/lucxury mens wristwatch 1.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Men's, Lockworld</h3>
+    <h4>Each one</h4>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="WT-LW-3003" onclick="addToCart(
+  'mens, Lockworld',
+  15000,'WT-LW-3003',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/lucxury mens wristwatch.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Men'ns, Lockworld</h3>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="WT-LW-3004" onclick="addToCart(
+  'Mens, Lockworld',
+  20000,'WT-LW-3004',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/style ladies watch.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Ladies Watch, Lockworld</h3>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="WT-LW-3005" onclick="addToCart(
+  'Ladies Watch',
+  15000,'WT-LW-3005',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/mens watch 2.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Men's Silver Watch, Lockworld</h3>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-name="WT-LW-3006" onclick="addToCart(
+  'Mens Watch, Lockworld',
+  20000,'WT-LW-3006',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Classic Hiram.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Classic Hiram</h3>
+    <p class="price">₦10,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-name="CL-HR-001" onclick="addToCart(
+  'Classic Hiram',
+  10000,'CL-HR-001',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/valandnee bag.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Valandnee bag</h3>
+    <label>Select Color</label>
+        <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="White">White</option>
+  <option value="Maroon">Maroon</option>
+  <option value="Dack brown">Dack brown</option>
+  <option value="Brown">Brown</option>
+  <option value="Light brown">Light brown</option>
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="BAG-HD9-99441" onclick="addToCart(
+  'Valandnee bag',
+  20000, 'BAG-HD9-99441',event
+)">Add to Cart</button>
+  </div>
+   </div>
+      <div class="grid">
+        <div class="service-card">
+    <img src="Photos/valandnee bag 2.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Valandnee bag</h3>
+        <label>Select Color</label>
+        <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="Ash color">Ash Color</option>
+  <option value="White somoke">White somoke</option>
+  <option value="Dack brown">Dack brown</option>
+  <option value="Brown">Brown</option>
+  <option value="Light brown">Light brown</option>
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="BAG-HD9-99402" onclick="addToCart(
+  'Valandnee bag',
+  20000, 'BAG-HD9-99402',event
+)">Add to Cart</button>
+  </div>
+   </div>
+      <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Valandnee bag 3.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Valandnee bag</h3>
+        <label>Select Color</label>
+        <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="Coffee">Coffee</option>
+  <option value="Maroon">Maroon</option>
+  <option value="Ash color">Ash color</option>
+  <option value="Brown">Brown</option>
+  <option value="White somoke">White somoke</option>
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="BAG-HD9-99408" onclick="addToCart(
+  'Valandnee bag',
+  20000, 'BAG-HD9-99408',event
+)">Add to Cart</button>
+  </div>
+   </div>
+      <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Valandnee bag 4.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Valandnee bag</h3>
+            <label>Select Color</label>
+        <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="Coffee">Coffee</option>
+  <option value="Maroon">Maroon</option>
+  <option value="Ash color">Ash color</option>
+  <option value="Brown">Brown</option>
+  <option value="White somoke">White somoke</option>
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="BAG-HD9-99409" onclick="addToCart(
+  'Valandnee bag',
+  20000, 'BAG-HD9-99409',event
+)">Add to Cart</button>
+  </div>
+   </div>
+      <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Valandnee bag 5.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Valandnee bag</h3>
+                <label>Select Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="White">White</option>
+  <option value="Ligth coffee">Ligth coffee</option>
+  <option value="Brown">Brown</option>
+  <option value="Dack brown">Dack brown</option>
+  <option value="Light brown">Light brown</option>
+  
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="BAG-HD9-99444" onclick="addToCart(
+  'Valandnee bag',
+  20000, 'BAG-HD9-99444',event
+)">Add to Cart</button>
+  </div>
+   </div>
+      <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Valandnee bag 6.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Valandnee bag</h3>
+                <label>Select Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="Maroon">Maroon</option>
+  <option value="Coffee">Coffee</option>
+  <option value="Brown">Brown</option>
+  <option value="Dack brown">Dack brown</option>
+  <option value="Light brown">Light brown</option>
+  
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="BAG-HD9-99397" onclick="addToCart(
+  'Valandnee bag',
+  20000, 'BAG-HD9-99397',event
+)">Add to Cart</button>
+  </div>
+   </div>
+      <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Valandnee bag 7.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Valandnee bag</h3>
+                <label>Select Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="White">white</option>
+  <option value="Coffee">Coffee</option>
+  <option value="Brown">Brown</option>
+  <option value="Dack brown">Dack brown</option>
+  <option value="Ash color">Ash color</option>
+  
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="BAG-HD9-99414" onclick="addToCart(
+  'Valandnee bag',
+  20000, 'BAG-HD9-99414',event
+)">Add to Cart</button>
+  </div>
+   </div>
+      <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Valandnee bag 8.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Valandnee, bag</h3>
+                <label>Select Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="White">white</option>
+  <option value="Coffee">Coffee</option>
+  <option value="Brown">Brown</option>
+  <option value="Dack brown">Dack brown</option>
+  <option value="Light brown">Light brown</option>
+  
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="BAG-HD9-99430" onclick="addToCart(
+  'Valandnee, bag',
+  20000, 'BAG-HD9-99430',event
+)">Add to Cart</button>
+  </div>
+   </div>
+      <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Valandnee bag 9.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3 style="padding-bottom: 35px;">Valandnee, bag</h3>
+    <h4>Each one</h4>
+                <label>Select Color:</label>
+    <select class="color-select">
+  <option value="black">Black</option>
+  <option value="White">white</option>
+  <option value="Coffee">Coffee</option>
+  <option value="Brown">Brown</option>
+  <option value="Dack brown">Dack brown</option>
+  <option value="Light brown">Light brown</option>
+  
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="BAG-HD9-99426" onclick="addToCart(
+  'Valandnee bag',
+  20000, 'BAG-HD9-99426',event
+)">Add to Cart</button>
+  </div>
+   </div>
+         <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Valandnee bag 10.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3 style="padding-bottom: 35px;">Valandnee bag</h3>
+    <h4>Each one</h4>
+            <label>Select Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="White">white</option>
+  <option value="Coffe">Coffee</option>
+  <option value="Brown">Brown</option>
+  <option value="Dack brown">Dack brown</option>
+  <option value="Light brown">Light brown</option>
+  
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="BAG-HD9-99427"  onclick="addToCart(
+  'Valandnee bag',
+  20000,'BAG-HD9-99427', event
+)">Add to Cart</button>
+  </div>
+   </div>
+            <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Premium Black Handbag.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3 style="padding-bottom: 35px;">Premium Black Handbag</h3>
+    <h4>Each one</h4>
+            <label>Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+  
+</select>
+    <p class="price">₦10,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="LX-BAG-001"  onclick="addToCart(
+  'Premium Black Handbag',
+  10000,'LX-BAG-001', event
+)">Add to Cart</button>
+  </div>
+   </div>
+               <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Premium Green Handbag.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3 style="padding-bottom: 35px;">Premium Green Handbag</h3>
+    <h4>Each one</h4>
+            <label>Color:</label>
+    <select class="color-select">
+  <option value="Green">Green</option>
+  
+</select>
+    <p class="price">₦10,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="LX-BAG-002"  onclick="addToCart(
+  'Premium Green Handbag',
+  10000,'LX-BAG-002', event
+)">Add to Cart</button>
+  </div>
+   </div>
+               <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Premium Red Handbag.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3 style="padding-bottom: 35px;">Premium Red Handbag</h3>
+    <h4>Each one</h4>
+            <label>Color:</label>
+    <select class="color-select">
+  <option value="Red">Red</option>
+  
+</select>
+    <p class="price">₦10,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="LX-BAG-003"  onclick="addToCart(
+  'Premium Red Handbag',
+  10000,'LX-BAG-003', event
+)">Add to Cart</button>
+  </div>
+   </div>
+         <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Virucci shoe.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Virucci Shoe</h3>
+    <h4>Size 36-41</h4>
+    <label>Select Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="White">White</option>
+  <option value="Coffee">Coffee</option>
+  <option value="Brown">Brown</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-VR-2339" onclick="addToCart(
+  'Virucci Shoe',
+  20000,'SH-VR-2339',event
+)">Add to Cart</button>
+  </div>
+   </div>
+         <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Virucci shoe 2.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Virucci Shoe</h3>
+    <h4>Size 36-41</h4>
+        <label>Select Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="Brown">Brown</option>
+  <option value="Light brown">Light brown</option>
+  <option value="White">White</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-VR-2038" onclick="addToCart(
+  'Virucci Shoe',
+  20000,'SH-VR-2038',event
+)">Add to Cart</button>
+  </div>
+   </div>
+            <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Virucci shoe 3.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Virucci Shoe</h3>
+    <h4>Size 36-41</h4>
+        <label>Select Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="Maroon">Maroon</option>
+  <option value="Army color">Army color</option>
+  <option value="White">White</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+</select>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-VR-1853" onclick="addToCart(
+  'Virucci Shoe',
+  20000,'SH-VR-1853',event
+)">Add to Cart</button>
+  </div>
+   </div>
+               <div class="grid">
+        <div class="service-card">
+    <img src="Photos/flat shoe.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Flat Shoe</h3>
+    <h4>Size 35-42</h4>
+        <label>Color:</label>
+    <select class="color-select">
+  <option value="Pich">Pich</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+</select>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-FL-001" onclick="addToCart(
+  'Flat Shoe',
+  15000,'SH-FL-001',event
+)">Add to Cart</button>
+  </div>
+   </div>
+                  <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Luxury Flat Shoe 1.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Luxury Flat shoe</h3>
+    <h4>Size 35-42</h4>
+        <label>Color:</label>
+    <select class="color-select">
+  <option value="Pich">Pich</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+</select>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-FL-002" onclick="addToCart(
+  'Luxury Flat Shoe',
+  15000,'SH-FL-002',event
+)">Add to Cart</button>
+  </div>
+   </div>
+                  <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Luxuty Flat Shoe 2.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Luxury Flat Shoe</h3>
+    <h4>Size 35-42</h4>
+        <label>Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+</select>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-FL-003" onclick="addToCart(
+  'Luxury Flat Shoe',
+  15000,'SH-FL-003',event
+)">Add to Cart</button>
+  </div>
+   </div>
+                  <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Luxury Flat Shoe 4.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Luxury Flat Shoe</h3>
+    <h4>Size 35-42</h4>
+        <label>Color:</label>
+    <select class="color-select">
+  <option value="White">White</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+</select>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-FL-004" onclick="addToCart(
+  'Luxury Flat Shoe',
+  15000,'SH-FL-004',event
+)">Add to Cart</button>
+  </div>
+   </div>
+                  <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Luxury Flat Shoe 5.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Luxury Flat Shoe</h3>
+    <h4>Size 35-42</h4>
+        <label>Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+</select>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-FL-005" onclick="addToCart(
+  'Luxury Flat Shoe',
+  15000,'SH-FL-005',event
+)">Add to Cart</button>
+  </div>
+   </div>
+                  <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Luxury Shoe 6.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Luxury Shoe</h3>
+    <h4>Size 35-42</h4>
+        <label>Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+</select>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-FL-006" onclick="addToCart(
+  'Luxury Shoe',
+  15000,'SH-FL-006',event
+)">Add to Cart</button>
+  </div>
+   </div>
+                  <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Men's Shoe Dior .jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Men's Shoe Dior</h3>
+    <h4>Size 35-42</h4>
+        <label>Select Color:</label>
+    <select class="color-select">
+  <option value="Black">Black</option>
+  <option value="White">White</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+</select>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-MEN-001" onclick="addToCart(
+  'Mens Shoe Dior',
+  15000,'SH-MEN-001',event
+)">Add to Cart</button>
+  </div>
+   </div>
+                     <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Men's shoe LV.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Men's Shoe LV</h3>
+    <h4>Size 35-42</h4>
+        <label>Color:</label>
+    <select class="color-select">
+  <option value="White">White</option>
+</select><br>
+<label>Select Size</label>
+<select class="size-select">
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+</select>
+    <p class="price">₦15,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="SH-MEN-002" onclick="addToCart(
+  'Mens Shoe LV',
+  15000,'SH-MEN-002',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/chain 1.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Luxery Gold Necklace</h3>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="NK-LX-001" onclick="addToCart(
+  'Luxury Gold Necklace',
+  20000,'NK-LX-001',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/chain 2.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Queen Gold Necklace</h3>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="NK-LX-002" onclick="addToCart(
+  'Queen Gold Necklace ',
+  20000,'NK-LX-002',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/chain 3.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Bridal Gold Necklace</h3>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="NK-LX-003" onclick="addToCart(
+  'Bridal Gold Necklace',
+  20000,'NK-LX-003',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/chain 4.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Royal Bridal Necklace</h3>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="NK-LX-004" onclick="addToCart(
+  'Royal Bridal Necklace',
+  20000,'NK-LX-004',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/chain 5.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Classic Beauty Necklace</h3>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="NK-LX-005" onclick="addToCart(
+  'Classic Beauty Necklace',
+  20000,'NK-LX-005',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/chain 6.jpeg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Silver Elegance Necklace</h3>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="NK-LX-006" onclick="addToCart(
+  'Silver Elegance Necklace',
+  20000,'NK-LX-006',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Premium Nicklace .jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Premium Necklace</h3>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="NK-LX-006" onclick="addToCart(
+  'Premium Necklace',
+  20000,'NK-LX-006',event
+)">Add to Cart</button>
+  </div>
+   </div>
+   <div class="grid">
+        <div class="service-card">
+    <img src="Photos/Leadies Nicklace.jpg" alt="">
+    <!-- <span class="badge">Free Delivery</span> -->
+    <h3>Lady's Necklace</h3>
+    <p class="price">₦20,000</p>
+
+    <div class="qty">
+      <button class="minus">−</button>
+      <span class="count">1</span>
+      <button class="plus">+</button>
+    </div>
+
+    <button class="add-cart" data-code="NK-LX-007" onclick="addToCart(
+  'Ladys Necklace',
+  20000,'NK-LX-007',event
+)">Add to Cart</button>
+  </div>
+   </div>
+    </div>
+</section>
+
+<!-- //Saloon Section// -->
+     <!-- HERO SECTION -->
+<section id="saloon" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>MM Luxury Women Saloon</h1>
+        <p>Everyday Beauty & Bridal Perfection</p>
+        <a href="#services" class="btn">View Services</a>
+    </div>
+</section>
+
+    <!-- EVERYDAY BEAUTY -->
+    <section class="services-saloon" id="services">
+      <h2>Everyday Beauty Services</h2>
+      <p class="gallery-desc">
+Elegant everyday transformations for confident women.
+</p>
+      <div class="service-grid">
+        <div class="card">Hair Styling</div>
+        <div class="card">Braiding</div>
+        <div class="card">Hair Coloring</div>
+        <div class="card">Makeup</div>
+        <div class="card">Facial Treatment</div>
+        <div class="card">Nails</div>
+        <div class="card">Henner</div>
+      </div>
+    </section>
+
+    <!-- BRIDAL SECTION -->
+    <section class="bridal">
+      <h2>Bridal & Event Packages</h2>
+      <p class="gallery-desc" style="color: goldenrod;">
+Premium bridal glam for your unforgettable day.
+</p>
+      <div class="bridal-grid">
+        <div class="bridal-card">
+          <h3>Silver Package</h3>
+          <p>Bridal Hair + Makeup</p>
+          <span>₦30,000</span>
+        </div>
+
+        <div class="bridal-card">
+          <h3>Gold Package</h3>
+          <p>Hair + Makeup + Gele Styling</p>
+          <span>₦50,000</span>
+        </div>
+
+        <div class="bridal-card">
+          <h3>Royal Premium</h3>
+          <p>Full Glam + Home Service</p>
+          <span>₦80,000</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking">
+      <h2>Book Your Appointment</h2>
+      <a href="http://wa.me/7038094555" class="btn-saloon">Chat on WhatsApp</a>
+    </section>
+<!-- GALLERY SECTION -->
+<section class="gallery">
+
+    <h2>Everyday Beauty Styles</h2>
+    <p class="gallery-desc">
+Elegant everyday transformations for confident women.
+</p>
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="Photos/Everyday img 1.jpg" alt="Saloon Interior">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Everyday img 2.jpg" alt="Saloon Interior">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Everyday img 3.jpg" alt="Saloon Interior">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Everyday 4.jpg" alt="Saloon Interior">
+        </div>
+
+    </div>
+
+    <h2 class="bridal-title">Bridal & Event Styles</h2>
+    <p class="gallery-desc" style="color: goldenrod;">
+Premium bridal glam for your unforgettable day.
+</p>
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="Photos/Bridal img 1.jpg" alt="Bridal Style">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Bridal img 3.jpg" alt="Bridal Style">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Bridal img 2.jpg" alt="Bridal Style">
+        </div>
+
+        <div class="gallery-item">
+            <img src="Photos/Bridal img 4.jpg" alt="Bridal Style">
+        </div>
+
+    </div>
+
+</section>
+<!-- BOOKING FORM SECTION -->
+<section class="booking-form" id="bookingForm">
+    <h2>Book Your Appointment</h2>
+
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+<select id="serviceSelect" required>
+    <option value="">Select Service</option>
+    <option value="Hair Styling">Hair Styling</option>
+    <option value="Braiding">Braiding</option>
+    <option value="Makeup">Makeup</option>
+    <option value="Bridal Silver Package">Bridal Silver Package</option>
+    <option value="Bridal Gold Package">Bridal Gold Package</option>
+    <option value="Royal Premium Package">Royal Premium Package</option>
+</select>
+
+        <input type="date" required>
+        <textarea placeholder="Additional Message (Optional)"></textarea>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</section>
+<!-- LOADING OVERLAY -->
+<div class="loading-overlay" id="loadingOverlay">
+    <div class="loader-box">
+        <div class="spinner"></div>
+        <img src="Photos/momy.jpg" class="logo-loader">
+        <p class="loading-text">Processing Booking...</p>
+    </div>
+</div>
+<div id="contact-about" class="last-wrapper">
+    <div class="brand-last">
+    <img src="Photos/momy.jpg"  alt="logo">
+    <span>M.M COLLECTION</span>
+  </div>
+  <div class="info" style="display: flex; gap: 290px; color: goldenrod; justify-self: center; margin-right: 200px;">
+    <h2>Contact us</2><h2>Our information</h2>
+  </div>
+  <div class="contact-wrap">
+    <div class="address">
+      <div class="icon-intro-wrapper">
+        <div class="icon-box">
+          <i class="fa fa-map-marker"></i>
+          <span></span>
+        </div>
+        <div class="intro">
+          <h3>Addrees</h3><br>
+          <div id="Zoro"> SHOP NO 55, Chamo Pilazer Ring Road,</div>
+          <div id="one">Near Matrics Pilling Station</div>
+          <div id="two">Kano, Nasarawa L.G.A</div>
+        </div>
+              <div class="icon-intro-wrapper" style="padding-top: 50px;">
+        <div class="icon-box">
+          <i class="fa fa-phone"></i>
+          <span></span>
+        </div>
+        <div class="intro">
+          <h3>Phone</h3><br>
+          <div id="Zoro">+2347038094555, +2347071503828</div>
+        </div>
+      </div>
+            <div class="icon-intro-wrapper" style="padding-top: 50px;">
+        <div class="icon-box">
+          <i class="fa fa-envelope"></i>
+          <span></span>
+        </div>
+        <div class="intro">
+          <h3>Email</h3><br>
+          <div id="Zoro">Maryammalia500@gmail.com </div>
+        </div>
+            </div>
+      </div>
+    </div>
+    <div class="information">
+      <div class="icon-intro-wrapper">
+        <div class="icon-box">
+          <i class="fa fa-user"></i>
+          <span></span>
+        </div>
+        <div class="intro">
+          <h3>Information</h3><br>
+          <div id="Zoro">We look forward to hearing from you and serving you better.</div>
+          <div id="one">Have question or need assistance?</div>
+          <div id="two">Feel free to reach out to us anytime.</div>
+        </div>
+      </div>
+          <div class="information" style="padding-top: 50px;">
+      <div class="icon-intro-wrapper">
+        <div class="icon-box">
+          <i class="fa fa-arrow-down"></i>
+          <span></span>
+        </div>
+        <div class="intro">
+          <h3>About</h3><br>
+          <div id="Zoro"><select style="margin-bottom: 50px;">
+            <option value=" Our Leader">Our Leader</option>
+            <option value="Ummi Maliya">Ummi Maliya</option>
+          </select>
+          </div>
+          <div id="one">
+            <select style="margin-bottom: 50px;">
+              <option value="Our Executive">Our Executive</option>
+              <option value="Ummi Maliya">Ummi Maliya</option>
+            </select>
+          </div>
+          <div id="two">
+            <select>
+              <option value="Our Members">Our Members</option>
+              <opotion value="Zainab Maliya">Zainab Maliya</opotion>
+              <option value="Summayya">Summayya</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+ </div>
+ <div class="opening-closing">
+  <h1 style="COLOR:goldenrod; text-align: center;">OPENING HOURS</h1>
+ </div>
+ <div class="opening-time">
+  <div class="opening">
+    <p id="one">Monday</p>
+    <p id="two">Tuesday</p>
+    <p id="three">Wednesday</p>
+    <p id=" four">Thusday</p>
+    <p id="six">Friday</p>
+    <p id="seven">Saturday</p>
+    <p id="enght">Sunday</p>
+  </div>
+  <div class="time">
+    <p id="number-one">10:00am - 08:00pm</p>
+    <p id="number-two">10:00am - 08:00pm</p>
+    <p id="number-three">10:00am - 08:00pm</p>
+    <p id="number-four">10:00am - 08:00pm</p>
+    <p id="number-five">10:00am - 08:00pm</p>
+    <p id="number-six">10:00am - 08:00pm</p>
+    <p id="number-seven">10:00am - 08:00pm</p>
+  </div>
+ </div>
+  <!-- <div class="one">
+    <h3>Contact us</h3><h3>Information</h3>
+  </div>
+    <div class="two" style="text-align: center;">
+   <i class="fa fa-map-marker"> <h4>Shop NO:55,Chamo Plazer, Ring Road, Bypass<br>Behaind, Matrix Pilling Station, Kano State, Nasarawa L.G.A.</h4></i><h4>Information</h4>
+  </div>
+    <div class="two">
+    <h4>+2347038094555,+2347071503828</h4><h4>Information</h4>
+  </div>
+    <div class="two">
+    <h4>Maryammalia500@gmail.com</h4><h4>Information</h4>
+  </div>
+    <div class="two">
+    <h4>Contact us</h4><h4>Information</h4>
+  </div>
+    <div class="two">
+    <h4>Contact us</h4><h4>Information</h4>
+  </div> -->
+</div>
+<footer>
+            <ul>
+          <li><a href="http://wa.me/7038094555"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/mm_collections_kano?igsh=cWxvZDA5dTl4MWhv&utm_source=qr"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.tiktok.com/@mm_collections_kanoo?_r=1&_t=ZS-93JRM2K25rt"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"  style="width: 50px;
+      height: 50px;
+      display: block;
+      background: linear-gradient(0deg,#ffffff,goldenrod);
+      border-radius: 50%;
+      line-height: 50px;
+      font-size: 3px;
+      color:black;
+      margin-top: 0px;
+      transition: 0.5s; "></a></li>
+          </ul>
+          <p style="margin-top: 90px;">©<span id="year">2026</span>MM.Collections And Beuaty Louge. All right reserved</p>
+</footer>
+<script src="JS/script.js"></script>
+</body>
+</html>
